@@ -468,7 +468,7 @@ td:nth-child(13) {
   }
 
   .table-frame {
-    padding: 16px 8px 18px;
+    padding: 14px 8px 14px;
     overflow-x: hidden;
   }
 
@@ -481,7 +481,7 @@ td:nth-child(13) {
   th,
   td {
     min-width: 0;
-    padding: 5px 2px;
+    padding: 3px 2px;
     border-width: 1px;
     overflow-wrap: anywhere;
     word-break: break-word;
@@ -489,13 +489,13 @@ td:nth-child(13) {
   }
 
   th {
-    height: auto;
-    min-height: 72px;
+    height: 58px;
+    min-height: 0;
   }
 
   td {
-    height: auto;
-    min-height: 112px;
+    height: 92px;
+    min-height: 0;
   }
 
   th:nth-child(1),
@@ -567,7 +567,7 @@ td:nth-child(13) {
     width: 100%;
     max-width: 100%;
     min-width: 0;
-    grid-template-rows: auto auto 24px;
+    grid-template-rows: auto auto 20px;
     border-radius: 2px;
   }
 
@@ -580,13 +580,13 @@ td:nth-child(13) {
   }
 
   .score-box b {
-    padding: 7px 2px 0;
+    padding: 5px 2px 0;
     font-size: 6px;
     line-height: 1.2;
   }
 
   .score-box em {
-    padding: 0 2px 6px;
+    padding: 0 2px 4px;
     font-size: 6px;
     line-height: 1.2;
   }
@@ -596,8 +596,8 @@ td:nth-child(13) {
   }
 
   .score-box.final-exam {
-    min-height: 64px;
-    grid-template-rows: 39px 25px;
+    min-height: 54px;
+    grid-template-rows: 34px 20px;
   }
 
   .score-box.final-exam b {
@@ -605,7 +605,7 @@ td:nth-child(13) {
   }
 
   .score-box.final-exam span {
-    min-height: 25px;
+    min-height: 20px;
   }
 
   .badge {
