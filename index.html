@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Öğrenci Bilgileri</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="phone-page">
+      <section class="content-shell">
+        <article class="panel">
+          <h1 class="panel-title">Öğrenci Bilgileri</h1>
+          <div class="student-card">
+            <div class="portrait">
+              <img src="foto.png" alt="Öğrenci fotoğrafı" />
+            </div>
+
+            <dl class="student-info">
+              <div>
+                <dt>T.C. kimlik no. :</dt>
+                <dd class="link-like">11452937776</dd>
+              </div>
+              <div>
+                <dt>Öğrenci no :</dt>
+                <dd class="link-like">04250000522</dd>
+              </div>
+              <div>
+                <dt>Ad soyad :</dt>
+                <dd>ZEYNEP SAHRA ÖZDEMİR</dd>
+              </div>
+              <div>
+                <dt>Kayıt tarihi :</dt>
+                <dd>02.09.2025</dd>
+              </div>
+              <div>
+                <dt>Program :</dt>
+                <dd>Fen Fakültesi / İstatistik / Lisans</dd>
+              </div>
+              <div>
+                <dt>Durum :</dt>
+                <dd>Aktif</dd>
+              </div>
+              <div>
+                <dt>Kayıtlanma şekli :</dt>
+                <dd>ÖSS yi kazanarak gelen</dd>
+              </div>
+              <div>
+                <dt>Eğitim düzeyi :</dt>
+                <dd>Lisans</dd>
+              </div>
+            </dl>
+          </div>
+
+          <form class="filters">
+            <select aria-label="Program tipi">
+              <option>Anadal</option>
+            </select>
+            <label class="checkbox-line">
+              <input type="checkbox" />
+              <span>Alınan son dersi göster</span>
+            </label>
+            <button type="button">Listele</button>
+            <select aria-label="Dosya türü">
+              <option>Pdf</option>
+            </select>
+            <button type="button">İndir</button>
+          </form>
+        </article>
+
+        <article class="panel">
+          <h2 class="panel-title">2025 - 2026 Bahar</h2>
+          <div class="table-frame">
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Ders kodu</th>
+                  <th>Ders adı</th>
+                  <th>Dal</th>
+                  <th>Öğretim üyesi</th>
+                  <th>Devam durumu</th>
+                  <th>Yıl içi etkinlikler</th>
+                  <th>YİD (yarıyıl/yıl içi değerlendirmesi)</th>
+                  <th>Yıl sonu etkinlikler (yarıyıl/yıl sonu sınav notu)</th>
+                  <th>BN (Başarı notu)</th>
+                  <th>Büt.</th>
+                  <th>HBN (harfli başarı notu)</th>
+                  <th>Sınıf ortalaması</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>ATA102.1</td>
+                  <td>ATATÜRK İLKELERİ VE İNKILAP TARİHİ II</td>
+                  <td>Anadal</td>
+                  <td>Öğr. Gör. BÜNYAMİN SARAÇ</td>
+                  <td>Devamlı</td>
+                  <td><span class="score-box"><b>Ara Sınav (%40,00)</b><em>(Tarih Girilmemiş)</em><span>85</span></span></td>
+                  <td>85,00</td>
+                  <td><span class="score-box absent final-exam"><b>YSSN (%60,00)</b><span>90</span></span></td>
+                  <td>88</td>
+                  <td></td>
+                  <td><span class="badge warn">AA - Başarılı</span></td>
+                  <td>61,72</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>CHA001.1</td>
+                  <td>ÇOCUK HAKLARI VE AİLE EĞİTİMİ</td>
+                  <td>Anadal</td>
+                  <td>Araş. Gör. Dr. FİLİZ KARADAĞ</td>
+                  <td>Devamlı</td>
+                  <td><span class="score-box"><b>Ara Sınav (%40,00)</b><em>(Tarih Girilmemiş)</em><span>95</span></span></td>
+                  <td>95,00</td>
+                  <td><span class="score-box absent final-exam"><b>YSSN (%60,00)</b><span>95</span></span></td>
+                  <td>95</td>
+                  <td></td>
+                  <td><span class="badge fail">AA - Başarılı</span></td>
+                  <td>84,54</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>ECO102.1</td>
+                  <td>İKTİSADA GİRİŞ II</td>
+                  <td>Anadal</td>
+                  <td>Dr. Öğretim Üyesi BEGÜM YURTERİ KÖSEDAĞLI</td>
+                  <td>Devamlı</td>
+                  <td><span class="score-box"><b>Ara Sınav (%40,00)</b><em>(Tarih Girilmemiş)</em><span>70</span></span></td>
+                  <td>70,00</td>
+                  <td><span class="score-box absent final-exam"><b>YSSN (%60,00)</b><span>75</span></span></td>
+                  <td>73</td>
+                  <td></td>
+                  <td><span class="badge fail">CB - Başarılı</span></td>
+                  <td>62,83</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>FEN102.1</td>
+                  <td>SCIENTIFIC ENGLISH II</td>
+                  <td>Anadal</td>
+                  <td>Araş. Gör. Dr. GÖZDE KUŞ</td>
+                  <td>Devamlı</td>
+                  <td><span class="score-box"><b>Ara Sınav (%40,00)</b><em>(Tarih Girilmemiş)</em><span>90</span></span></td>
+                  <td>90,00</td>
+                  <td><span class="score-box absent final-exam"><b>YSSN (%60,00)</b><span>90</span></span></td>
+                  <td>90</td>
+                  <td></td>
+                  <td><span class="badge fail">AA - Başarılı</span></td>
+                  <td>67,45</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>İST106.1</td>
+                  <td>İSTATİSTİKTE BİLGİSAYAR UYGULAMALARI I</td>
+                  <td>Anadal</td>
+                  <td>Prof. Dr. HAYAL BOYACIOĞLU</td>
+                  <td>Devamlı</td>
+                  <td><span class="score-box absent"><b>Ara Sınav (%40,00)</b><em>(Tarih Girilmemiş)</em><span>70</span></span></td>
+                  <td>70,00</td>
+                  <td><span class="score-box absent final-exam"><b>YSSN (%60,00)</b><span>70</span></span></td>
+                  <td>70</td>
+                  <td></td>
+                  <td><span class="badge fail">CB - Başarılı</span></td>
+                  <td>69,92</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>İST110.1</td>
+                  <td>BASIC STATISTICS</td>
+                  <td>Anadal</td>
+                  <td>Doç. Dr. BURCU AYTAÇOĞLU</td>
+                  <td>Devamlı</td>
+                  <td><span class="score-box"><b>Ara Sınav (%40,00)</b><em>(Tarih Girilmemiş)</em><span>80</span></span></td>
+                  <td>80,00</td>
+                  <td><span class="score-box absent final-exam"><b>YSSN (%60,00)</b><span>80</span></span></td>
+                  <td>80</td>
+                  <td></td>
+                  <td><span class="badge fail">BB - Başarılı</span></td>
+                  <td>48,19</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>MAN102.1</td>
+                  <td>İŞLETMEYE GİRİŞ II</td>
+                  <td>Anadal</td>
+                  <td>Araş. Gör. Dr. ÖZGÜR BABACAN</td>
+                  <td>Devamlı</td>
+                  <td><span class="score-box"><b>Ara Sınav (%40,00)</b><em>(Tarih Girilmemiş)</em><span>75</span></span></td>
+                  <td>75,00</td>
+                  <td><span class="score-box absent final-exam"><b>YSSN (%60,00)</b><span>80</span></span></td>
+                  <td>78</td>
+                  <td></td>
+                  <td><span class="badge warn">BB - Başarılı</span></td>
+                  <td>66,17</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>MAT152.1</td>
+                  <td>MATEMATİK II</td>
+                  <td>Anadal</td>
+                  <td>Doç. Dr. AYŞEGÜL ÇAKSU GÜLER</td>
+                  <td>Devamlı</td>
+                  <td><span class="score-box"><b>Ara Sınav (%40,00)</b><em>(Tarih Girilmemiş)</em><span>80</span></span></td>
+                  <td>80,00</td>
+                  <td><span class="score-box absent final-exam"><b>YSSN (%60,00)</b><span>85</span></span></td>
+                  <td>83</td>
+                  <td></td>
+                  <td><span class="badge warn">BA - Başarılı</span></td>
+                  <td>44,20</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>TUR102.1</td>
+                  <td>TÜRK DİLİ II</td>
+                  <td>Anadal</td>
+                  <td>Öğr. Gör. EMEL ERİNCİK</td>
+                  <td>Devamlı</td>
+                  <td><span class="score-box"><b>Ara Sınav (%40,00)</b><em>(Tarih Girilmemiş)</em><span>75</span></span></td>
+                  <td>75,00</td>
+                  <td><span class="score-box absent final-exam"><b>YSSN (%60,00)</b><span>85</span></span></td>
+                  <td>81</td>
+                  <td></td>
+                  <td><span class="badge warn">BA - Başarılı</span></td>
+                  <td>77,46</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>ÜYG102.1</td>
+                  <td>ÜNİVERSİTE YAŞAMINA GEÇİŞ</td>
+                  <td>Anadal</td>
+                  <td>Prof. Dr. GÖZDE ULUTAGAY</td>
+                  <td>Devamlı</td>
+                  <td><span class="score-box"><b>Ara Sınav (%40,00)</b><em>(Tarih Girilmemiş)</em><span>95</span></span></td>
+                  <td>95,00</td>
+                  <td><span class="score-box absent final-exam"><b>YSSN (%60,00)</b><span>95</span></span></td>
+                  <td>95</td>
+                  <td></td>
+                  <td><span class="badge fail">AA - Başarılı</span></td>
+                  <td>75,59</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="summary-frame">
+            <table class="summary-table" aria-label="Ortalama bilgileri">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Alınan kredi | akts</th>
+                  <th>Tamamlanan kredi | akts</th>
+                  <th>Puan / alınan akts (ortalama)</th>
+                  <th>DNO</th>
+                  <th>GNO</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Yarıyıl</th>
+                  <td>24,00 | 30,00</td>
+                  <td>24,00 | 24,00</td>
+                  <td><span class="summary-badge">96,6 / 30,00</span></td>
+                  <td><span class="summary-badge">3,22</span></td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <th>Birikimli</th>
+                  <td>24,00 | 30,00</td>
+                  <td>24,00 | 24,00</td>
+                  <td><span class="summary-badge">96,6 / 30,00</span></td>
+                  <td>-</td>
+                  <td><span class="summary-badge">3,22</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+      </section>
+    </main>
+  </body>
+</html>

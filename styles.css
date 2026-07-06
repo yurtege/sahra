@@ -1,0 +1,684 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: #ffffff;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #171717;
+  background: #ffffff;
+}
+
+button,
+select,
+input {
+  font: inherit;
+}
+
+.phone-page {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #8de2e2 0%, #a9e9fb 100%);
+  padding-bottom: 42px;
+}
+
+.content-shell {
+  width: calc(100% - 76px);
+  max-width: 1120px;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+.panel {
+  margin-bottom: 14px;
+  overflow: hidden;
+  border: 2px solid #1387ee;
+  border-radius: 5px;
+  background: #f7f9fa;
+}
+
+.panel-title {
+  margin: 0;
+  padding: 11px 13px;
+  background: #0787f9;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.student-card {
+  min-height: 260px;
+  padding: 34px 66px 24px;
+  display: grid;
+  grid-template-columns: 210px minmax(280px, 1fr);
+  gap: 68px;
+  align-items: start;
+  background: #f8fafb;
+}
+
+.portrait {
+  width: 155px;
+  height: 205px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 0 0 10px #ffffff;
+}
+
+.portrait img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.student-info {
+  margin: 0;
+  padding-top: 4px;
+  font-size: 14px;
+  line-height: 1.32;
+}
+
+.student-info div {
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  gap: 12px;
+}
+
+.student-info dt {
+  margin: 0;
+  font-weight: 700;
+}
+
+.student-info dd {
+  margin: 0;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.link-like {
+  color: #344de9;
+}
+
+.filters {
+  min-height: 63px;
+  padding: 13px 70px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  border-top: 1px solid #d5dce2;
+  background: #f5f6f7;
+}
+
+.filters select,
+.filters button {
+  width: 144px;
+  height: 38px;
+  border-radius: 4px;
+}
+
+.filters select {
+  padding: 0 13px;
+  border: 1px solid #d5dbe2;
+  background: #ffffff;
+  color: #7a7f86;
+}
+
+.filters button {
+  border: 1px solid #147ce0;
+  background: #0787f9;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.checkbox-line {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  white-space: nowrap;
+  font-size: 13px;
+}
+
+.checkbox-line input {
+  width: 18px;
+  height: 18px;
+}
+
+.table-frame {
+  padding: 35px 24px 40px;
+  overflow-x: auto;
+  background: #fafafa;
+}
+
+table {
+  width: 100%;
+  min-width: 1025px;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 13px;
+  background: #ffffff;
+}
+
+th,
+td {
+  border: 1px solid #d8dde3;
+  padding: 11px 7px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+th {
+  height: 108px;
+  background: #fbfbfb;
+  font-weight: 700;
+}
+
+td {
+  height: 145px;
+  font-weight: 500;
+}
+
+tbody tr:nth-child(odd) td {
+  background: #e8e9eb;
+}
+
+tbody tr:nth-child(even) td {
+  background: #f4f6f6;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+  width: 28px;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+  width: 76px;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+  width: 115px;
+  text-align: left;
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+  width: 55px;
+}
+
+th:nth-child(5),
+td:nth-child(5) {
+  width: 96px;
+  text-align: left;
+}
+
+th:nth-child(6),
+td:nth-child(6) {
+  width: 70px;
+}
+
+th:nth-child(7),
+td:nth-child(7) {
+  width: 112px;
+}
+
+th:nth-child(8),
+td:nth-child(8) {
+  width: 118px;
+}
+
+th:nth-child(9),
+td:nth-child(9) {
+  width: 90px;
+}
+
+th:nth-child(10),
+td:nth-child(10) {
+  width: 58px;
+}
+
+th:nth-child(11),
+td:nth-child(11) {
+  width: 38px;
+}
+
+th:nth-child(12),
+td:nth-child(12) {
+  width: 110px;
+}
+
+th:nth-child(13),
+td:nth-child(13) {
+  width: 80px;
+}
+
+.score-box {
+  display: grid;
+  grid-template-rows: auto auto 36px;
+  overflow: hidden;
+  border: 1px solid #d8dde3;
+  border-radius: 5px;
+  background: #f8f9fa;
+}
+
+.score-box b {
+  padding: 9px 5px 0;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.score-box em {
+  padding: 0 5px 7px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.score-box span {
+  display: grid;
+  place-items: center;
+  border-top: 1px solid #d8dde3;
+  background: #ffffff;
+  font-size: 13px;
+}
+
+.score-box.absent {
+  height: auto;
+}
+
+.score-box.final-exam {
+  min-height: 104px;
+  grid-template-rows: 62px 42px;
+}
+
+.score-box.final-exam b {
+  display: grid;
+  place-items: center;
+  padding: 0 5px;
+  line-height: 1.25;
+}
+
+.score-box.final-exam span {
+  min-height: 42px;
+  font-weight: 500;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 6px;
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.badge.fail {
+  background: #27ae60;
+}
+
+.badge.warn {
+  background: #27ae60;
+  color: #ffffff;
+}
+
+.summary-frame {
+  padding: 0 24px 36px;
+  background: #fafafa;
+}
+
+.summary-table {
+  min-width: 0;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-size: 13px;
+  background: #eef0f1;
+}
+
+.summary-table th,
+.summary-table td {
+  height: 34px;
+  padding: 7px 8px;
+  border: 1px solid #d8dde3;
+  background: #eef0f1;
+  text-align: center;
+  font-weight: 600;
+}
+
+.summary-table thead th {
+  background: #e4e7e9;
+  color: #000000;
+  font-weight: 700;
+}
+
+.summary-table tbody th {
+  width: 10%;
+  text-align: left;
+  font-weight: 700;
+}
+
+.summary-table tbody td {
+  font-weight: 500;
+}
+
+.summary-badge {
+  display: inline-block;
+  padding: 3px 7px;
+  border-radius: 4px;
+  background: #77828e;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 1;
+}
+
+@media (max-width: 760px) {
+  .phone-page {
+    padding-bottom: 12px;
+  }
+
+  .content-shell {
+    width: calc(100% - 14px);
+    padding-top: 0;
+  }
+
+  .panel {
+    margin-bottom: 8px;
+    border-width: 2px;
+    border-radius: 2px;
+  }
+
+  .panel-title {
+    padding: 8px 9px;
+    font-size: 9px;
+  }
+
+  .student-card {
+    min-height: 132px;
+    padding: 14px 18px 13px;
+    grid-template-columns: 92px minmax(0, 1fr);
+    gap: 18px;
+  }
+
+  .portrait {
+    width: 82px;
+    height: 108px;
+    box-shadow: 0 0 0 4px #ffffff;
+  }
+
+  .student-info {
+    padding-top: 0;
+    font-size: 7px;
+    line-height: 1.36;
+  }
+
+  .filters {
+    min-height: 34px;
+    padding: 7px 8px;
+    justify-content: center;
+    gap: 6px;
+    flex-wrap: wrap;
+    overflow: visible;
+  }
+
+  .filters select,
+  .filters button {
+    flex: 0 1 52px;
+    width: 58px;
+    height: 20px;
+    padding: 0 4px;
+    border-radius: 2px;
+    font-size: 6.4px;
+  }
+
+  .filters button {
+    font-weight: 600;
+  }
+
+  .checkbox-line {
+    gap: 3px;
+    max-width: 108px;
+    min-width: 0;
+    white-space: normal;
+    font-size: 6.4px;
+    line-height: 1.15;
+  }
+
+  .checkbox-line span {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .checkbox-line input {
+    width: 8px;
+    height: 8px;
+  }
+
+  .table-frame {
+    padding: 16px 8px 18px;
+    overflow-x: hidden;
+  }
+
+  table {
+    min-width: 0;
+    font-size: 6px;
+    line-height: 1.15;
+  }
+
+  th,
+  td {
+    min-width: 0;
+    padding: 5px 2px;
+    border-width: 1px;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    hyphens: auto;
+  }
+
+  th {
+    height: auto;
+    min-height: 72px;
+  }
+
+  td {
+    height: auto;
+    min-height: 112px;
+  }
+
+  th:nth-child(1),
+  td:nth-child(1) {
+    width: 3.2%;
+  }
+
+  th:nth-child(2),
+  td:nth-child(2) {
+    width: 7.2%;
+  }
+
+  th:nth-child(3),
+  td:nth-child(3) {
+    width: 10.6%;
+  }
+
+  th:nth-child(4),
+  td:nth-child(4) {
+    width: 5%;
+  }
+
+  th:nth-child(5),
+  td:nth-child(5) {
+    width: 9.5%;
+  }
+
+  th:nth-child(6),
+  td:nth-child(6) {
+    width: 6.4%;
+  }
+
+  th:nth-child(7),
+  td:nth-child(7) {
+    width: 12.5%;
+  }
+
+  th:nth-child(8),
+  td:nth-child(8) {
+    width: 10.6%;
+  }
+
+  th:nth-child(9),
+  td:nth-child(9) {
+    width: 10.7%;
+  }
+
+  th:nth-child(10),
+  td:nth-child(10) {
+    width: 4.4%;
+  }
+
+  th:nth-child(11),
+  td:nth-child(11) {
+    width: 3.1%;
+  }
+
+  th:nth-child(12),
+  td:nth-child(12) {
+    width: 10.8%;
+  }
+
+  th:nth-child(13),
+  td:nth-child(13) {
+    width: 6%;
+  }
+
+  .score-box {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    grid-template-rows: auto auto 24px;
+    border-radius: 2px;
+  }
+
+  .score-box b,
+  .score-box em,
+  .score-box span {
+    min-width: 0;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .score-box b {
+    padding: 7px 2px 0;
+    font-size: 6px;
+    line-height: 1.2;
+  }
+
+  .score-box em {
+    padding: 0 2px 6px;
+    font-size: 6px;
+    line-height: 1.2;
+  }
+
+  .score-box span {
+    font-size: 6px;
+  }
+
+  .score-box.final-exam {
+    min-height: 64px;
+    grid-template-rows: 39px 25px;
+  }
+
+  .score-box.final-exam b {
+    padding: 0 2px;
+  }
+
+  .score-box.final-exam span {
+    min-height: 25px;
+  }
+
+  .badge {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 2px 1px;
+    border-radius: 2px;
+    font-size: 5.2px;
+    line-height: 1.15;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .summary-frame {
+    padding: 0 8px 18px;
+  }
+
+  .summary-table {
+    font-size: 6px;
+    line-height: 1.15;
+  }
+
+  .summary-table th,
+  .summary-table td {
+    height: auto;
+    min-height: 18px;
+    padding: 3px 2px;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .summary-badge {
+    display: inline-block;
+    max-width: 100%;
+    padding: 2px 3px;
+    border-radius: 2px;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .student-info div {
+    grid-template-columns: 70px minmax(0, 1fr);
+    gap: 4px;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .student-card {
+    grid-template-columns: 92px minmax(0, 1fr);
+    gap: 18px;
+  }
+
+  .student-info div {
+    grid-template-columns: 70px minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 380px) {
+  table,
+  .summary-table {
+    font-size: 5.4px;
+  }
+
+  .score-box b,
+  .score-box em,
+  .score-box span {
+    font-size: 5.4px;
+  }
+
+  .badge {
+    font-size: 4.8px;
+  }
+}
